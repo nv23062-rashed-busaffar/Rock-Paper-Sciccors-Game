@@ -23,7 +23,7 @@ let computerScore = 0;
 
 function playRound(humanChoice, computerChoice) {
     if (humanChoice === computerChoice) {
-        console.log("It's a tie!");
+        console.log("It's a draw!");
         return;
     }
 
@@ -54,7 +54,7 @@ function playGame() {
     } else if (computerScore > humanScore) {
         console.log("The computer is the overall winner!");
     } else {
-        console.log("It's an overall tie!");
+        console.log("It's an overall draw!");
     }
 }
 
