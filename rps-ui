@@ -1,3 +1,4 @@
 git checkout -b rps-ui
 git push origin rps-ui
 git branch
+git checkout rps-ui
