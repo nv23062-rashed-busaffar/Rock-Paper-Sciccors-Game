@@ -17,7 +17,7 @@ function playRound(humanChoice) {
     let resultMessage = '';
 
     if (humanChoice === computerChoice) {
-        resultMessage = "It's a tie!";
+        resultMessage = "It's a draw!";
     } else if (
         (humanChoice === "rock" && computerChoice === "scissors") ||
         (humanChoice === "paper" && computerChoice === "rock") ||
@@ -34,10 +34,10 @@ function playRound(humanChoice) {
     document.getElementById('score').innerText = `Score - You: ${humanScore}, Computer: ${computerScore}`;
 
     if (humanScore === 5) {
-        alert("Congratulations! You are the overall winner!");
+        alert("Congratulations! You are the game winner!");
         resetGame();
     } else if (computerScore === 5) {
-        alert("The computer is the overall winner!");
+        alert("The computer is the game winner!");
         resetGame();
     }
 }
